@@ -4,7 +4,7 @@ import { useReportWebVitals } from "next/web-vitals";
 
 export default function App({ Component, pageProps }: AppProps) {
   useReportWebVitals((metric) => {
-    console.log("NEXT CWV", metric.name, metric.value, metric);
+    console.log("NEXT CWV", metric.name, metric.value);
   });
   return <Component {...pageProps} />;
 }

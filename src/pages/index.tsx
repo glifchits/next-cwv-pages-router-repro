@@ -17,7 +17,13 @@ export default function Home() {
       className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
     >
       <p>Index</p>
-      <Link href="/page1" className="text-blue-500 hover:underline">
+      <Link
+        href="/page1"
+        className="text-blue-500 hover:underline"
+        onClick={() => {
+          console.log("NEXT CWV: Navigating to Page 1");
+        }}
+      >
         Go to Page 1
       </Link>
     </div>
